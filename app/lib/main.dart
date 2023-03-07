@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'dart:ffi';
 
 void main() {
-  runApp(const MediaCenterApp());
+  runApp(const App());
 }
 
-class MediaCenterApp extends StatelessWidget {
-  const MediaCenterApp({Key? key}) : super(key: key);
+class App extends StatelessWidget {
+  const App({Key? key}) : super(key: key);
 
   // This widget is the root of your application.
   @override
