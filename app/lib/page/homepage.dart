@@ -14,8 +14,10 @@ class HomePageState extends State<HomePage> {
   var _counter = 0;
 
   void incrementCounter() {
-    setState(() {
-      _counter++;
+    Future.delayed(const Duration(seconds: 2), () {
+      setState(() {
+        _counter++;
+      });
     });
   }
 

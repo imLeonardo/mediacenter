@@ -1,12 +1,16 @@
+// import "dart:ffi";
+
 import 'package:mediacenter/page/errorpage.dart';
 import 'package:mediacenter/page/homepage.dart';
 import 'package:mediacenter/page/signinpage.dart';
 import 'package:mediacenter/page/signuppage.dart';
 import 'package:mediacenter/page/settingpage.dart';
 import "package:flutter/material.dart";
-// import "dart:ffi";
+
+import "define.dart";
 
 void main() {
+  Function? func;
   runApp(const App());
 }
 
