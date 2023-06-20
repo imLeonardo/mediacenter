@@ -10,7 +10,6 @@ import "package:flutter/material.dart";
 import "define.dart";
 
 void main() {
-  Function? func;
   runApp(const App());
 }
 
