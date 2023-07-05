@@ -12,6 +12,10 @@ class SignUpPage extends StatelessWidget {
       body: Center(
           child: Column(
             children: <Widget>[
+              const Text(
+                "aaaa",
+                selectionColor: Colors.deepOrangeAccent,
+              ),
               IconButton(
                 onPressed: () {
                   Navigator.pop(context, "signup返回值");

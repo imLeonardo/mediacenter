@@ -58,6 +58,31 @@ class HomePageState extends State<HomePage> {
               icon: const Icon(Icons.settings),
               tooltip: "Open Setting",
             ),
+            ElevatedButton(
+              onPressed: () {
+                print("ElevatedButton");
+              },
+              child: const Text("ElevatedButton"),
+            ),
+            TextButton(
+              onPressed: () {
+                print("TextButton");
+              },
+              child: const Text("TextButton"),
+            ),
+            OutlinedButton(
+              onPressed: () {
+                print("OutlinedButton");
+              },
+              child: const Text("OutlinedButton"),
+            ),
+            OutlinedButton.icon(
+              onPressed: () {
+                print("send");
+              },
+              icon: const Icon(Icons.send),
+              label: const Text("send"),
+            ),
           ],
         ),
       ),
