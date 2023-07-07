@@ -30,7 +30,7 @@ class App extends StatelessWidget {
           return const HomePage(title: "Home");
         },
         "/signin": (context) {
-          return const SignInPage();
+          return SignInPage();
         },
         "/signup": (context) {
           return const SignUpPage();

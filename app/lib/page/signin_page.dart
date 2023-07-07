@@ -1,9 +1,9 @@
 import "package:flutter/material.dart";
 
 class SignInPage extends StatelessWidget {
-  const SignInPage({Key? key}) : super(key: key);
-  var _unameController = new TextEditingController();
-  var _passwdController = new TextEditingController();
+  SignInPage({Key? key}) : super(key: key);
+  final _unameController = TextEditingController();
+  final _passwdController = TextEditingController();
 
   void initState() {
     _unameController.addListener(() {
@@ -20,20 +20,21 @@ class SignInPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Sign In"),
       ),
-      body: const Center(
+      body: Center(
           child: Column(
             children: <Widget>[
               TextField(
                 autofocus: true,
                 controller: _unameController,
-                decoration: InputDecoration(
+                decoration: const InputDecoration(
                     labelText: "用户名",
                     hintText: "用户名或邮箱",
                     prefixIcon: Icon(Icons.person)
                 ),
               ),
               TextField(
-                decoration: InputDecoration(
+                controller: _passwdController,
+                decoration: const InputDecoration(
                     labelText: "密码",
                     hintText: "您的登录密码",
                     prefixIcon: Icon(Icons.lock)

@@ -2,9 +2,9 @@ import "package:flutter/foundation.dart";
 import "package:flutter/material.dart";
 
 class HomePage extends StatefulWidget {
-  const HomePage({Key? key, required this.title}) : super(key: key);
+  const HomePage({Key? key, required String title}) : _title = title, super(key: key);
 
-  final String title;
+  final String _title;
 
   @override
   State<HomePage> createState() => HomePageState();
@@ -25,7 +25,7 @@ class HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text(widget._title),
       ),
       body: Center(
         child: Column(
@@ -59,8 +59,12 @@ class HomePageState extends State<HomePage> {
               tooltip: "Open Setting",
             ),
             ElevatedButton(
-              onPressed: () {
+              onPressed: () async {
                 print("ElevatedButton");
+                var ret = await Navigator.pushNamed(context, "/signin");
+                if (kDebugMode) {
+                  print("路由返回值:$ret");
+                }
               },
               child: const Text("ElevatedButton"),
             ),
