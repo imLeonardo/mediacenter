@@ -1,10 +1,10 @@
 // import "dart:ffi";
 
-import 'package:mediacenter/page/error_page.dart';
-import 'package:mediacenter/page/home_page.dart';
-import 'package:mediacenter/page/signin_page.dart';
-import 'package:mediacenter/page/signup_page.dart';
-import 'package:mediacenter/page/setting_page.dart';
+import 'package:mediacenter/page/error.dart';
+import 'package:mediacenter/page/home.dart';
+import 'package:mediacenter/page/signin.dart';
+import 'package:mediacenter/page/signup.dart';
+import 'package:mediacenter/page/setting.dart';
 import "package:flutter/material.dart";
 
 import "define.dart";
